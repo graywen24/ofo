@@ -73,7 +73,7 @@ class IndexController extends Controller {
 			'Content-Type' => 'application/json; charset=utf-8'
 			);
 		$post = array(
-			'token'    => 'CFBEA2A1-AEA2-4E4D-A7B4-E9BB498EB844',
+			'token'    => '',
 			'sourse'   => 0,
 			'classify' => 0,
 			'page'     => 1
@@ -89,7 +89,7 @@ class IndexController extends Controller {
 			'Origin' => 'https://common.ofo.so'
 			);
 		$post = array(
-			'token'  => 'CFBEA2A1-AEA2-4E4D-A7B4-E9BB498EB844',
+			'token'  => '',
 			'sourse' => 0,
 			'carno'  => 56578,
 			'lat'    => 30.57252532998116,
@@ -103,7 +103,7 @@ class IndexController extends Controller {
 			'Content-Type' => 'application/json; charset=utf-8'
 			);
 		$post = array(
-			'token'  => 'CFBEA2A1-AEA2-4E4D-A7B4-E9BB498EB844',
+			'token'  => '',
 			'sourse' => 0,
 			'lat'    => 30.57252532998116,
 			'lng'    => 114.3314644340214
