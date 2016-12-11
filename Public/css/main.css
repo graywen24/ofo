@@ -1,0 +1,228 @@
+body{
+	margin: 0px;
+	padding: 0;
+	font-family: Arial,Verdana,Tahoma;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(0,0,0,.87);
+	background-color: #FFF;
+	height: 100%;
+}
+*{
+	box-sizing:border-box;
+}
+input::-webkit-input-placeholder {
+	font-size: 24px;
+	color: #FFFF33 !important; /* WebKit browsers */
+}
+input:-moz-placeholder {
+	font-size: 24px;
+	color: #FFFF33 !important; /* Mozilla Firefox 4 to 18 */
+}
+input::-moz-placeholder {
+	font-size: 24px;
+	color: #FFFF33 !important; /* Mozilla Firefox 19+ */
+}
+input:-ms-input-placeholder {
+	font-size: 24px;
+	color: #FFFF33 !important; /* Internet Explorer 10+ */
+}
+html{
+	height: 100%;
+}
+.body{
+	perspective:1000;
+	transform-style:preserve-3d;
+}
+.container{
+	width: 80%;
+	height: 240px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: -120px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+	
+}
+.front{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+	transition:1s;
+	transform-style:preserve-3d;
+	transform: rotateY(0deg);
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
+}
+.back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+	transition:1s;
+	transform-style:preserve-3d;
+	transform: rotateY(-180deg);
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
+}
+.add{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+	transition:1s;
+	transform-style:preserve-3d;
+	transform: rotateY(-180deg);
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
+}
+.bike{
+	width: 80%;
+	height: 100px;
+	margin:0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: -85px;
+}
+.pass{
+	width: 80%;
+	height: 100px;
+	margin:0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: -80px;
+}
+.bike input{
+	width: 100%;
+	height: 70px;
+	font-size: 3em;
+	text-align: center;
+	border: none;
+	background-color: #AAAAAA;
+	font-weight: 100;
+	color: #FFFF33;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+}
+.bike h1{
+	width: 100%;
+	text-align: center;
+	color: #FFFF33;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.add-pass{
+	width: 80%;
+	height: 100px;
+	margin:0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: -85px;
+}
+.add-pass input{
+	width: 100%;
+	height: 70px;
+	font-size: 3em;
+	text-align: center;
+	border: none;
+	background-color: #AAAAAA;
+	font-weight: 100;
+	color: #FFFF33;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+}
+.add-pass h1{
+	width: 100%;
+	text-align: center;
+	color: #FFFF33;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+}
+.bike_pass{
+	width: 100%;
+	height: 70px;
+	font-size: 3em;
+	line-height: 70px;
+	text-align: center;
+	border: none;
+	background-color: #888;
+	font-weight: 100;
+	color: #FFFF33;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+}
+.pass h3{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.ret{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+.btn{
+	width: 100%;
+	height: 50px;
+	margin:0 auto;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1.3em;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;            /* W3C syntax */
+}
+.btn-primary{
+	background-color: #FFFF33;
+	color: #000000;
+}
+.btn-normal{
+	color: #FFFF33;
+}
+.forget{
+	width: 100%;
+	color: #AAA;
+	text-align: right;
+}
